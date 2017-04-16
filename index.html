@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Bookerly</title>
+</head>
+
+<html>
+
+<body>
+    <h1>Bookerly</h1>
+
+	<div id="app">
+		<h2>{{ message }}</h2>
+	</div>
+
+	<div id="app2">
+			<h3>{{ submessage }}</h3>
+	</div>
+
+	<div id="app3">
+			<p v-if="seen">Developer mode</p>
+	</div>
+
+	<div id="app4">
+		<ol>
+			<li v-for="book in books">
+				{{ book.title }}
+			</li>
+		</ol>
+	</div>
+
+	<div id="app5">
+		<p>{{ message }}</p>
+		<button v-on:click="reverse">Reverse!</button>
+	</div>
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./src/js/app.js"></script>
+</body>
+
+</html>
